@@ -8,4 +8,8 @@ import entity.User;
  */
 public interface UserDao {
     public User login();
+    public List<User> queryByList();
+    public void insert(User user);
+    public void delete(String id);
+    public void update(User user);
 }
